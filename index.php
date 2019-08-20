@@ -34,24 +34,24 @@
 
 <div class="container-contact100">
     <div class="wrap-contact100">
-        <form class="contact100-form validate-form">
+        <form method="post" action='atendimento/novo.php' class="contact100-form validate-form">
 				<span class="contact100-form-title">
 					Atendimento ao Cliente
 				</span>
 
             <div class="wrap-input100  bg1">
-                <span class="label-input100">Nome completo *</span>
-                <input class="input100" type="text" placeholder="Digite seu nome completo">
+                <span class="label-input100"  >Nome completo *</span>
+                <input class="input100" type="text" name="nome" placeholder="Digite seu nome completo" >
             </div>
 
             <div class="wrap-input100  bg1 rs1-wrap-input100">
                 <span class="label-input100">Email *</span>
-                <input class="input100" type="text" placeholder="Digite seu e-mail ">
+                <input class="input100" type="text" name="email" placeholder="Digite seu e-mail ">
             </div>
 
             <div class="wrap-input100 bg1 rs1-wrap-input100">
                 <span class="label-input100">Telefone</span>
-                <input class="input100" type="text" placeholder="(DD) 9 XXXX-XXXX">
+                <input class="input100" type="text" name="telefone" placeholder="(DD) 9 XXXX-XXXX">
             </div>
 
             <div class="wrap-input100 input100-select bg1">
@@ -59,10 +59,10 @@
                 <div>
                     <select class="js-select2">
                         <option>Escolha uma opção</option>
-                        <option>Elogio</option>
-                        <option>Crítica</option>
-                        <option>Reclamação</option>
-                        <option>Adquirir novo produto</option>
+                        <option name="elogio">Elogio</option>
+                        <option name="critica">Crítica</option>
+                        <option name="reclamacao">Reclamação</option>
+                        <option name="novo">Adquirir novo produto</option>
                     </select>
                     <div class="dropDownSelect2"></div>
                 </div>
@@ -71,10 +71,10 @@
             <div class="wrap-input100 bg1 rs1-wrap-input100">
                 <span class="label-input100">Tipo de cliente *</span><br/>
                 <label class="input100">
-                    <input type="radio"> Novo cliente
+                    <input type="radio" name="escolha"> Novo cliente
                 </label>
                 <label class="input100">
-                    <input type="radio"> Cliente antigo
+                    <input type="radio" name="escolha"> Cliente antigo
                 </label>
             </div>
 
